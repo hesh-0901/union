@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Um Compassion - Chorale</title>
+<title>Um Compassion - App Communautaire</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
@@ -13,54 +13,53 @@
 <style>
   body { font-family: 'Poppins', sans-serif; }
 </style>
-
 </head>
 
-<body class="bg-[#0f0014] text-white overflow-x-hidden">
+<body class="bg-slate-50 text-gray-800">
 
 <!-- HEADER -->
-<header class="absolute top-0 left-0 w-full z-50">
-  <div class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
-    <h1 class="text-xl font-bold tracking-wide">
+<header class="bg-white shadow-sm">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-sky-700">
       Um Compassion
     </h1>
 
     <a href="/login"
-       class="bg-[#03b2ed] text-white px-5 py-2 rounded-full hover:scale-105 transition duration-300">
+       class="bg-sky-600 text-white px-5 py-2 rounded-full hover:bg-sky-700 transition duration-300">
       Espace Membres
     </a>
   </div>
 </header>
 
-<!-- HERO SECTION -->
-<section class="relative min-h-screen flex items-center justify-center text-center px-6">
+<!-- HERO -->
+<section class="relative py-28 text-white">
 
-  <!-- Background gradient -->
-  <div class="absolute inset-0 bg-gradient-to-br from-[#280120] via-[#450063] to-[#9414d1]"></div>
+  <!-- Background Gradient -->
+  <div class="absolute inset-0 bg-gradient-to-br from-sky-600 via-sky-500 to-sky-400"></div>
 
-  <!-- Glow effect -->
-  <div class="absolute w-[600px] h-[600px] bg-[#fd59ca] opacity-20 blur-[150px] rounded-full"></div>
+  <!-- Glow -->
+  <div class="absolute w-[500px] h-[500px] bg-sky-300 opacity-20 blur-[120px] rounded-full top-20 left-1/2 -translate-x-1/2"></div>
 
-  <div class="relative z-10 max-w-4xl">
+  <div class="relative z-10 max-w-4xl mx-auto text-center px-6">
 
     <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-      Une Chorale <span class="text-[#fd59ca]">Moderne</span><br>
-      Un Cœur <span class="text-[#03b2ed]">Uni</span>
+      Une Communauté Unie<br>
+      par la <span class="text-white">Louange</span>
     </h2>
 
     <p class="text-lg md:text-xl opacity-90 mb-10">
-      Um Compassion élève des chants inspirés pour glorifier Dieu,
-      créer l’unité et impacter les cœurs à travers la louange.
+      Une plateforme communautaire moderne pour connecter,
+      informer et unir les membres de la chorale Um Compassion.
     </p>
 
     <div class="flex justify-center gap-6 flex-wrap">
       <a href="/enreg"
-         class="bg-[#fd59ca] px-8 py-4 rounded-full font-semibold hover:scale-105 transition duration-300">
+         class="bg-white text-sky-700 px-8 py-4 rounded-full font-semibold hover:scale-105 transition duration-300">
         Rejoindre
       </a>
 
-      <a href="#discover"
-         class="border border-white px-8 py-4 rounded-full hover:bg-white hover:text-[#450063] transition duration-300">
+      <a href="#features"
+         class="border border-white px-8 py-4 rounded-full hover:bg-white hover:text-sky-700 transition duration-300">
         Découvrir
       </a>
     </div>
@@ -68,47 +67,44 @@
   </div>
 </section>
 
-<!-- DISCOVER SECTION -->
-<section id="discover" class="relative py-24 bg-slate-50 text-gray-800">
+<!-- FEATURES -->
+<section id="features" class="py-24 bg-white">
 
   <div class="max-w-6xl mx-auto px-6">
 
-    <h3 class="text-3xl md:text-4xl font-bold text-center mb-16 text-[#450063]">
-      Notre Univers
+    <h3 class="text-3xl md:text-4xl font-bold text-center mb-16 text-sky-700">
+      Une App Pensée pour la Chorale
     </h3>
 
     <div class="grid md:grid-cols-3 gap-10">
 
-      <!-- CARD 1 -->
-      <div class="bg-white rounded-3xl p-10 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300">
-        <div class="text-[#9414d1] text-5xl mb-6">
-          <i class="fas fa-music"></i>
-        </div>
-        <h4 class="text-xl font-semibold mb-3">Répétitions</h4>
-        <p class="text-gray-600">
-          Des moments d’apprentissage, d’harmonie et de discipline musicale.
-        </p>
-      </div>
-
-      <!-- CARD 2 -->
-      <div class="bg-white rounded-3xl p-10 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300">
-        <div class="text-[#03b2ed] text-5xl mb-6">
-          <i class="fas fa-church"></i>
-        </div>
-        <h4 class="text-xl font-semibold mb-3">Programmes</h4>
-        <p class="text-gray-600">
-          Participation active aux cultes et événements spirituels majeurs.
-        </p>
-      </div>
-
-      <!-- CARD 3 -->
-      <div class="bg-white rounded-3xl p-10 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300">
-        <div class="text-[#fd59ca] text-5xl mb-6">
+      <div class="bg-sky-50 rounded-3xl p-10 text-center shadow-lg hover:shadow-xl hover:-translate-y-2 transition duration-300">
+        <div class="text-sky-600 text-5xl mb-6">
           <i class="fas fa-users"></i>
         </div>
         <h4 class="text-xl font-semibold mb-3">Communauté</h4>
         <p class="text-gray-600">
-          Une famille unie par la foi, la passion et la louange.
+          Connecter tous les membres dans un espace privé sécurisé.
+        </p>
+      </div>
+
+      <div class="bg-sky-50 rounded-3xl p-10 text-center shadow-lg hover:shadow-xl hover:-translate-y-2 transition duration-300">
+        <div class="text-sky-600 text-5xl mb-6">
+          <i class="fas fa-music"></i>
+        </div>
+        <h4 class="text-xl font-semibold mb-3">Répétitions</h4>
+        <p class="text-gray-600">
+          Suivi des programmes et organisation interne simplifiée.
+        </p>
+      </div>
+
+      <div class="bg-sky-50 rounded-3xl p-10 text-center shadow-lg hover:shadow-xl hover:-translate-y-2 transition duration-300">
+        <div class="text-sky-600 text-5xl mb-6">
+          <i class="fas fa-bell"></i>
+        </div>
+        <h4 class="text-xl font-semibold mb-3">Notifications</h4>
+        <p class="text-gray-600">
+          Informer rapidement tous les membres en temps réel.
         </p>
       </div>
 
@@ -116,41 +112,39 @@
   </div>
 </section>
 
-<!-- CTA PREMIUM -->
-<section class="relative py-24 text-center">
+<!-- CTA -->
+<section class="py-24 bg-sky-600 text-white text-center">
 
-  <div class="absolute inset-0 bg-gradient-to-r from-[#450063] to-[#fd59ca]"></div>
-
-  <div class="relative z-10 max-w-3xl mx-auto px-6 text-white">
+  <div class="max-w-3xl mx-auto px-6">
 
     <h3 class="text-3xl md:text-4xl font-bold mb-6">
-      Faites Partie de l’Histoire
+      Rejoignez la Communauté
     </h3>
 
     <p class="mb-10 opacity-90">
-      Rejoignez une chorale dynamique où la musique devient un outil
-      d’impact spirituel et communautaire.
+      Accédez à l’espace membre et vivez pleinement l’expérience
+      Um Compassion.
     </p>
 
     <a href="/enreg"
-       class="bg-[#03b2ed] px-10 py-4 rounded-full font-semibold hover:scale-105 transition duration-300">
-      Commencer maintenant
+       class="bg-white text-sky-700 px-10 py-4 rounded-full font-semibold hover:scale-105 transition duration-300">
+      Créer un compte
     </a>
 
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-[#280120] py-12 text-center text-gray-300">
+<footer class="bg-sky-900 text-sky-200 py-12 text-center">
 
   <div class="flex justify-center gap-8 text-2xl mb-6">
-    <a href="#" class="hover:text-[#fd59ca] transition">
+    <a href="#" class="hover:text-white transition">
       <i class="fab fa-instagram"></i>
     </a>
-    <a href="#" class="hover:text-[#03b2ed] transition">
+    <a href="#" class="hover:text-white transition">
       <i class="fab fa-facebook-f"></i>
     </a>
-    <a href="#" class="hover:text-[#9414d1] transition">
+    <a href="#" class="hover:text-white transition">
       <i class="fab fa-youtube"></i>
     </a>
   </div>
