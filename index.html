@@ -5,12 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Um Compassion - Chorale</title>
 
-  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 
   <style>
@@ -18,40 +14,43 @@
   </style>
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-slate-50 text-gray-800">
 
 <!-- HEADER -->
 <header class="bg-white shadow-sm">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
     <div class="flex items-center gap-3">
       <img src="logo_compassion_gris.png" class="h-10 w-10 object-contain">
-      <h1 class="text-xl font-bold">Um Compassion</h1>
+      <h1 class="text-xl font-bold text-blue-700">Um Compassion</h1>
     </div>
 
-    <div class="flex items-center gap-4">
-      <a href="/login" class="bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition">
-        Espace Membres
-      </a>
-    </div>
+    <a href="/login"
+       class="bg-gradient-to-r from-blue-600 to-fuchsia-600 text-white px-5 py-2 rounded-full hover:opacity-90 transition">
+      Espace Membres
+    </a>
   </div>
 </header>
 
 <!-- HERO -->
-<section class="relative bg-purple-700 text-white py-24">
+<section class="relative bg-gradient-to-r from-blue-600 via-blue-500 to-fuchsia-600 text-white py-28">
   <div class="max-w-4xl mx-auto text-center px-6">
-    <h2 class="text-4xl md:text-5xl font-extrabold mb-6">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
       Unissons nos cœurs dans la louange
     </h2>
-    <p class="text-lg md:text-xl mb-8 opacity-90">
+
+    <p class="text-lg md:text-xl mb-10 opacity-90">
       La Chorale Um Compassion élève des chants inspirés pour glorifier Dieu
-      et édifier son peuple dans l’amour et l’excellence.
+      et édifier son peuple avec passion et excellence.
     </p>
 
     <div class="flex justify-center gap-4 flex-wrap">
-      <a href="/enreg" class="bg-white text-purple-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
+      <a href="/enreg"
+         class="bg-white text-blue-700 px-7 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
         S'enregistrer
       </a>
-      <a href="#presentation" class="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-purple-700 transition">
+
+      <a href="#presentation"
+         class="border border-white px-7 py-3 rounded-full hover:bg-white hover:text-blue-700 transition">
         Découvrir
       </a>
     </div>
@@ -59,9 +58,9 @@
 </section>
 
 <!-- PRESENTATION -->
-<section id="presentation" class="py-20">
+<section id="presentation" class="py-24">
   <div class="max-w-4xl mx-auto text-center px-6">
-    <h3 class="text-3xl font-bold mb-6">Qui sommes-nous ?</h3>
+    <h3 class="text-3xl font-bold mb-6 text-blue-700">Qui sommes-nous ?</h3>
     <p class="text-lg text-gray-600 leading-relaxed">
       Le Département de Musique de l’Église La Compassion a pour mission
       d’enrichir les cultes par des chants inspirés, spirituels et prophétiques.
@@ -71,28 +70,30 @@
 </section>
 
 <!-- ACTIVITES -->
-<section class="bg-white py-20">
+<section class="bg-white py-24">
   <div class="max-w-6xl mx-auto px-6">
-    <h3 class="text-3xl font-bold text-center mb-12">Nos Activités</h3>
+    <h3 class="text-3xl font-bold text-center mb-16 text-blue-700">
+      Nos Activités
+    </h3>
 
-    <div class="grid md:grid-cols-2 gap-10">
+    <div class="grid md:grid-cols-2 gap-12">
 
-      <div class="bg-purple-50 rounded-3xl p-10 text-center hover:shadow-lg transition">
-        <div class="text-purple-600 text-6xl mb-6">
+      <div class="bg-gradient-to-br from-blue-50 to-fuchsia-50 rounded-3xl p-12 text-center hover:shadow-xl transition duration-300">
+        <div class="text-blue-600 text-6xl mb-6">
           <i class="fas fa-music"></i>
         </div>
-        <h4 class="text-xl font-semibold mb-3">Répétitions</h4>
+        <h4 class="text-xl font-semibold mb-4 text-gray-800">Répétitions</h4>
         <p class="text-gray-600">
           Mardis, Jeudis et Samedi<br>
           16h00 - 18h00
         </p>
       </div>
 
-      <div class="bg-purple-50 rounded-3xl p-10 text-center hover:shadow-lg transition">
-        <div class="text-purple-600 text-6xl mb-6">
+      <div class="bg-gradient-to-br from-blue-50 to-fuchsia-50 rounded-3xl p-12 text-center hover:shadow-xl transition duration-300">
+        <div class="text-fuchsia-600 text-6xl mb-6">
           <i class="fas fa-church"></i>
         </div>
-        <h4 class="text-xl font-semibold mb-3">Programmes de Culte</h4>
+        <h4 class="text-xl font-semibold mb-4 text-gray-800">Programmes de Culte</h4>
         <p class="text-gray-600">
           Participation active aux cultes et services spéciaux.
         </p>
@@ -102,28 +103,36 @@
   </div>
 </section>
 
-<!-- CTA FINAL -->
-<section class="bg-purple-600 text-white py-20 text-center">
+<!-- CTA -->
+<section class="bg-gradient-to-r from-blue-700 to-fuchsia-600 text-white py-24 text-center">
   <div class="max-w-3xl mx-auto px-6">
     <h3 class="text-3xl font-bold mb-6">Rejoignez la Chorale</h3>
-    <p class="mb-8 opacity-90">
-      Vous aimez chanter et souhaitez servir à travers la musique ?
+    <p class="mb-10 opacity-90">
+      Vous aimez chanter et souhaitez servir Dieu à travers la musique ?
       Votre place est parmi nous.
     </p>
 
-    <a href="/enreg" class="bg-white text-purple-700 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition">
+    <a href="/enreg"
+       class="bg-white text-blue-700 px-10 py-4 rounded-full font-semibold hover:bg-gray-100 transition">
       Commencer maintenant
     </a>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-gray-900 text-gray-300 py-10">
+<footer class="bg-slate-900 text-gray-300 py-12">
   <div class="max-w-6xl mx-auto px-6 text-center">
-    <div class="flex justify-center gap-6 text-2xl mb-6">
-      <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
-      <a href="#" class="hover:text-white"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" class="hover:text-white"><i class="fab fa-youtube"></i></a>
+
+    <div class="flex justify-center gap-8 text-2xl mb-8">
+      <a href="#" class="hover:text-blue-400 transition">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="hover:text-fuchsia-400 transition">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="hover:text-blue-400 transition">
+        <i class="fab fa-youtube"></i>
+      </a>
     </div>
 
     <p>© 2025 Um Compassion - Tous droits réservés</p>
