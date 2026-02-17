@@ -1,0 +1,52 @@
+<!-- BOTTOM NAV COMPONENT -->
+<nav id="bottomNav"
+     class="fixed bottom-5 left-1/2 -translate-x-1/2 w-[92%] max-w-md 
+            bg-black/90 backdrop-blur-2xl rounded-full 
+            py-3 px-6 flex justify-between items-center 
+            text-white shadow-2xl md:hidden z-50">
+
+  <!-- HOME -->
+  <a href="/home"
+     class="nav-item flex items-center justify-center text-gray-400 transition duration-300"
+     data-page="home">
+    <i class="fas fa-home text-lg"></i>
+  </a>
+
+  <!-- COMMUNITY -->
+  <a href="/community"
+     class="nav-item flex items-center justify-center text-gray-400 transition duration-300"
+     data-page="community">
+    <i class="fas fa-users text-lg"></i>
+  </a>
+
+  <!-- CENTER ACTION -->
+  <div class="relative -mt-8">
+    <button id="mainAction"
+            class="relative w-14 h-14 rounded-full 
+                   bg-gradient-to-br from-[#2563eb] to-[#0ea5e9] 
+                   flex items-center justify-center 
+                   text-white shadow-lg 
+                   transition duration-300 hover:scale-110">
+
+      <!-- Glow -->
+      <span class="absolute inset-0 rounded-full bg-cyan-400/40 blur-xl"></span>
+
+      <i class="fas fa-plus relative z-10 text-lg"></i>
+    </button>
+  </div>
+
+  <!-- NOTIFICATIONS -->
+  <a href="/notifications"
+     class="nav-item flex items-center justify-center text-gray-400 transition duration-300"
+     data-page="notifications">
+    <i class="fas fa-bell text-lg"></i>
+  </a>
+
+  <!-- PROFILE -->
+  <a href="/profil"
+     class="nav-item flex items-center justify-center text-gray-400 transition duration-300"
+     data-page="profil">
+    <i class="fas fa-user text-lg"></i>
+  </a>
+
+</nav>
