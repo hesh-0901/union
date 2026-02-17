@@ -125,6 +125,16 @@ body { font-family: 'Poppins', sans-serif; }
   </div>
 
 </div>
+   <!-- Bottom Nav -->
+  <div id="bottom-nav-container"></div>
+
+  <script>
+    fetch('/bottom-nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('bottom-nav-container').innerHTML = data;
+      });
+  </script>
 
 </body>
 </html>
