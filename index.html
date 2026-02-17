@@ -1,105 +1,133 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Um Compassion - Chorale</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Um Compassion - Chorale</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="chorale_style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
 </head>
 
-<body>
+<body class="bg-gray-50 text-gray-800">
 
-<header class="header">
-    <div class="container header-flex">
-        <div class="logo-block">
-            <img src="logo_compassion_gris.png" alt="Logo Um Compassion">
-            <h1>Um Compassion</h1>
-        </div>
-
-        <nav>
-            <a href="#presentation">Présentation</a>
-            <a href="#activites">Activités</a>
-            <a href="/login" class="btn-login">Espace Membres</a>
-        </nav>
+<!-- HEADER -->
+<header class="bg-white shadow-sm">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <img src="logo_compassion_gris.png" class="h-10 w-10 object-contain">
+      <h1 class="text-xl font-bold">Um Compassion</h1>
     </div>
+
+    <div class="flex items-center gap-4">
+      <a href="/login" class="bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition">
+        Espace Membres
+      </a>
+    </div>
+  </div>
 </header>
 
 <!-- HERO -->
-<section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-        <h2>Unissons nos cœurs dans la louange</h2>
-        <p>
-            La Chorale Um Compassion de l’Église La Compassion Lubumbashi
-            élève des chants inspirés pour glorifier Dieu et édifier son peuple.
-        </p>
-        <a href="#presentation" class="btn-primary">Découvrir la Chorale</a>
+<section class="relative bg-purple-700 text-white py-24">
+  <div class="max-w-4xl mx-auto text-center px-6">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-6">
+      Unissons nos cœurs dans la louange
+    </h2>
+    <p class="text-lg md:text-xl mb-8 opacity-90">
+      La Chorale Um Compassion élève des chants inspirés pour glorifier Dieu
+      et édifier son peuple dans l’amour et l’excellence.
+    </p>
+
+    <div class="flex justify-center gap-4 flex-wrap">
+      <a href="/enreg" class="bg-white text-purple-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
+        S'enregistrer
+      </a>
+      <a href="#presentation" class="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-purple-700 transition">
+        Découvrir
+      </a>
     </div>
+  </div>
 </section>
 
-<!-- PRÉSENTATION -->
-<section id="presentation" class="section">
-    <div class="container">
-        <h3>Qui sommes-nous ?</h3>
-        <p>
-            Le Département de Musique de l’Église La Compassion a pour mission
-            d’enrichir les cultes par des chants inspirés, prophétiques et
-            spirituels. Nous servons avec foi, discipline et excellence,
-            sous la direction du Saint-Esprit.
-        </p>
-    </div>
+<!-- PRESENTATION -->
+<section id="presentation" class="py-20">
+  <div class="max-w-4xl mx-auto text-center px-6">
+    <h3 class="text-3xl font-bold mb-6">Qui sommes-nous ?</h3>
+    <p class="text-lg text-gray-600 leading-relaxed">
+      Le Département de Musique de l’Église La Compassion a pour mission
+      d’enrichir les cultes par des chants inspirés, spirituels et prophétiques.
+      Nous servons avec foi, discipline et excellence.
+    </p>
+  </div>
 </section>
 
-<!-- ACTIVITÉS -->
-<section id="activites" class="section section-light">
-    <div class="container">
-        <h3>Nos Activités</h3>
+<!-- ACTIVITES -->
+<section class="bg-white py-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-12">Nos Activités</h3>
 
-        <div class="activities-grid">
-            <div class="activity-card">
-                <i class="fas fa-music"></i>
-                <h4>Répétitions</h4>
-                <p>Mardis, Jeudis et Samedi - 16h00 à 18h00</p>
-            </div>
+    <div class="grid md:grid-cols-2 gap-10">
 
-            <div class="activity-card">
-                <i class="fas fa-church"></i>
-                <h4>Programmes de Culte</h4>
-                <p>Participation active aux cultes dominicaux et services spéciaux.</p>
-            </div>
+      <div class="bg-purple-50 rounded-3xl p-10 text-center hover:shadow-lg transition">
+        <div class="text-purple-600 text-6xl mb-6">
+          <i class="fas fa-music"></i>
         </div>
-    </div>
-</section>
-
-<!-- CALL TO ACTION -->
-<section class="cta">
-    <div class="container">
-        <h3>Rejoignez la Chorale</h3>
-        <p>
-            Vous aimez chanter et désirez servir Dieu à travers la musique ?
-            Votre place est parmi nous.
+        <h4 class="text-xl font-semibold mb-3">Répétitions</h4>
+        <p class="text-gray-600">
+          Mardis, Jeudis et Samedi<br>
+          16h00 - 18h00
         </p>
+      </div>
 
-        <div class="cta-buttons">
-            <a href="/enreg" class="btn-primary">S’enregistrer</a>
-            <a href="/login" class="btn-secondary">Accès Membres</a>
+      <div class="bg-purple-50 rounded-3xl p-10 text-center hover:shadow-lg transition">
+        <div class="text-purple-600 text-6xl mb-6">
+          <i class="fas fa-church"></i>
         </div>
+        <h4 class="text-xl font-semibold mb-3">Programmes de Culte</h4>
+        <p class="text-gray-600">
+          Participation active aux cultes et services spéciaux.
+        </p>
+      </div>
+
     </div>
+  </div>
 </section>
 
-<footer class="footer">
-    <div class="container footer-flex">
-        <p>© 2026 Um Compassion - Tous droits réservés</p>
+<!-- CTA FINAL -->
+<section class="bg-purple-600 text-white py-20 text-center">
+  <div class="max-w-3xl mx-auto px-6">
+    <h3 class="text-3xl font-bold mb-6">Rejoignez la Chorale</h3>
+    <p class="mb-8 opacity-90">
+      Vous aimez chanter et souhaitez servir à travers la musique ?
+      Votre place est parmi nous.
+    </p>
 
-        <div class="social">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
+    <a href="/enreg" class="bg-white text-purple-700 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition">
+      Commencer maintenant
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-300 py-10">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <div class="flex justify-center gap-6 text-2xl mb-6">
+      <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="hover:text-white"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="hover:text-white"><i class="fab fa-youtube"></i></a>
     </div>
+
+    <p>© 2025 Um Compassion - Tous droits réservés</p>
+  </div>
 </footer>
 
 </body>
