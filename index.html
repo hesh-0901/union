@@ -7,98 +7,111 @@
 
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-  body { font-family: 'Poppins', sans-serif; }
+body { font-family: 'Poppins', sans-serif; }
+.brand { font-family: 'Orbitron', sans-serif; }
 </style>
 </head>
 
-<body class="bg-slate-100 flex min-h-screen">
+<body class="bg-black text-white overflow-x-hidden">
 
-<!-- SIDEBAR -->
-<aside class="w-72 bg-sky-700 text-white flex flex-col justify-between p-8">
+<!-- BACKGROUND -->
+<div class="fixed inset-0 bg-gradient-to-br from-sky-700 via-sky-600 to-cyan-500 opacity-90"></div>
+<div class="fixed w-[600px] h-[600px] bg-cyan-400 opacity-20 blur-[150px] rounded-full -top-40 -left-40"></div>
+<div class="fixed w-[600px] h-[600px] bg-sky-400 opacity-20 blur-[150px] rounded-full -bottom-40 -right-40"></div>
 
-  <div>
-    <h1 class="text-2xl font-bold mb-12">
-      Um Compassion
-    </h1>
+<!-- HEADER -->
+<header class="relative z-50 flex items-center justify-between px-6 py-5">
 
-    <nav class="space-y-6">
+  <h1 class="brand text-xl tracking-widest">
+    UM COMPASSION
+  </h1>
 
-      <a href="/login"
-         class="flex items-center gap-4 bg-white text-sky-700 px-5 py-3 rounded-xl font-semibold hover:scale-105 transition duration-300">
-        <i class="fas fa-sign-in-alt"></i>
-        Se connecter
-      </a>
+  <!-- Burger -->
+  <button id="burger" class="md:hidden text-2xl">
+    <i class="fas fa-bars"></i>
+  </button>
 
-      <a href="/enreg"
-         class="flex items-center gap-4 bg-sky-500 px-5 py-3 rounded-xl font-semibold hover:bg-sky-600 transition duration-300">
-        <i class="fas fa-user-plus"></i>
-        S'inscrire
-      </a>
+  <!-- Desktop Menu -->
+  <nav class="hidden md:flex gap-6 text-sm">
+    <a href="/login" class="hover:text-cyan-300 transition">Se connecter</a>
+    <a href="/enreg" class="hover:text-cyan-300 transition">S'inscrire</a>
+    <a href="#about" class="hover:text-cyan-300 transition">À propos</a>
+    <a href="#contact" class="hover:text-cyan-300 transition">Contact</a>
+  </nav>
 
-      <a href="#about"
-         class="flex items-center gap-4 hover:text-sky-200 transition duration-300">
-        <i class="fas fa-info-circle"></i>
-        À propos de nous
-      </a>
+</header>
 
-      <a href="#contact"
-         class="flex items-center gap-4 hover:text-sky-200 transition duration-300">
-        <i class="fas fa-envelope"></i>
-        Contactez-nous
-      </a>
+<!-- MOBILE MENU -->
+<div id="mobileMenu"
+     class="fixed top-0 right-0 h-full w-72 bg-black/80 backdrop-blur-xl transform translate-x-full transition-transform duration-300 z-40 p-8 space-y-8">
 
-    </nav>
-  </div>
+  <button id="closeMenu" class="text-right w-full text-2xl">
+    <i class="fas fa-times"></i>
+  </button>
 
-  <div class="text-sm opacity-80">
-    © 2025 Um Compassion
-  </div>
+  <a href="/login" class="block text-lg hover:text-cyan-400 transition">
+    Se connecter
+  </a>
 
-</aside>
+  <a href="/enreg" class="block text-lg hover:text-cyan-400 transition">
+    S'inscrire
+  </a>
+
+  <a href="#about" class="block text-lg hover:text-cyan-400 transition">
+    À propos de nous
+  </a>
+
+  <a href="#contact" class="block text-lg hover:text-cyan-400 transition">
+    Contactez-nous
+  </a>
+
+</div>
 
 <!-- MAIN CONTENT -->
-<main class="flex-1 flex items-center justify-center relative">
+<main class="relative z-10 flex flex-col items-center justify-center text-center min-h-screen px-6">
 
-  <!-- Background Gradient -->
-  <div class="absolute inset-0 bg-gradient-to-br from-sky-600 via-sky-500 to-sky-400"></div>
+  <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+    L'Écosystème<br>
+    des Choristes
+  </h2>
 
-  <!-- Glow -->
-  <div class="absolute w-[600px] h-[600px] bg-sky-300 opacity-20 blur-[120px] rounded-full"></div>
+  <p class="text-lg md:text-xl opacity-90 max-w-2xl mb-10">
+    Une application communautaire moderne pour le suivi,
+    la communication et l’épanouissement des membres.
+  </p>
 
-  <div class="relative z-10 max-w-3xl text-center text-white px-8">
+  <div class="flex flex-col sm:flex-row gap-6">
 
-    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
-      Bienvenue dans l'Écosystème<br>
-      des Choristes
-    </h2>
+    <a href="/login"
+       class="px-8 py-4 rounded-full bg-cyan-400 text-black font-semibold hover:scale-105 transition duration-300 shadow-lg shadow-cyan-400/50">
+      Accéder
+    </a>
 
-    <p class="text-lg md:text-xl opacity-90 mb-8">
-      Une plateforme communautaire dédiée au suivi,
-      à la communication et à l’épanouissement
-      des membres de la chorale Um Compassion.
-    </p>
-
-    <div class="flex justify-center gap-6 flex-wrap">
-
-      <a href="/login"
-         class="bg-white text-sky-700 px-8 py-4 rounded-full font-semibold hover:scale-105 transition duration-300">
-        Accéder à la communauté
-      </a>
-
-      <a href="/enreg"
-         class="border border-white px-8 py-4 rounded-full hover:bg-white hover:text-sky-700 transition duration-300">
-        Créer un compte
-      </a>
-
-    </div>
+    <a href="/enreg"
+       class="px-8 py-4 rounded-full border border-white hover:bg-white hover:text-black transition duration-300">
+      Créer un compte
+    </a>
 
   </div>
 
 </main>
+
+<script>
+const burger = document.getElementById('burger');
+const mobileMenu = document.getElementById('mobileMenu');
+const closeMenu = document.getElementById('closeMenu');
+
+burger.addEventListener('click', () => {
+  mobileMenu.classList.remove('translate-x-full');
+});
+
+closeMenu.addEventListener('click', () => {
+  mobileMenu.classList.add('translate-x-full');
+});
+</script>
 
 </body>
 </html>
